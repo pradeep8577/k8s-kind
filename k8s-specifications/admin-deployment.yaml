@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: admin
   template:
     metadata:
       labels:
         app: admin
     spec:
       containers:
-        - name: frontend
+        - name: admin
           image: pradeep018/amcibus.admin
           ports:
-            - containerPort: 80
+            - containerPort: 3001
 
