@@ -15,7 +15,7 @@ spec:
         app: backend
     spec:
       containers:
-        - image: pradeep018/amcibus.server
+        - image: pradeep018/amcibus.server:latest
           name: backend
           ports:
             - containerPort: 5000

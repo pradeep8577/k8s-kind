@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: admin
-          image: pradeep018/amcibus.admin
+          image: pradeep018/amcibus.admin:latest
           ports:
             - containerPort: 3001
           resources:

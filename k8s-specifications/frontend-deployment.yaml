@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: pradeep018/amcibus.app
+          image: pradeep018/amcibus.app:latest
           ports:
             - containerPort: 3000
           resources:
