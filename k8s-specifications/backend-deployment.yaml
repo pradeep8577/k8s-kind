@@ -26,5 +26,5 @@ spec:
               memory: "256Mi"  
           envFrom:
             - secretRef:
-                name: amicibus-secret
+                name: amchibus-secrets
 
