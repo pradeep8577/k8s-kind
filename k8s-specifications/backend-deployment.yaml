@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app: backend
   name: backend
 spec:
   replicas: 1
@@ -13,8 +15,8 @@ spec:
         app: backend
     spec:
       containers:
-        - name: backend
-          image: pradeep018/amcibus.server
+        - image: pradeep018/amcibus.server
+          name: backend
           ports:
             - containerPort: 5000
           resources:
