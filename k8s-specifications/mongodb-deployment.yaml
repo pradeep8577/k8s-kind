@@ -28,4 +28,11 @@ spec:
                 secretKeyRef:
                   name: mongo-secret
                   key: mongo-root-password
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
 
