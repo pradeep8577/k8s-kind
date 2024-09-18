@@ -21,6 +21,6 @@ spec:
             - name: MONGO_URI
               valueFrom:
                 secretKeyRef:
-                  name: mongo-secret
+                  name: amchibus-secrets
                   key: mongo-uri
 
