@@ -23,15 +23,4 @@ spec:
                 secretKeyRef:
                   name: mongo-secret
                   key: mongo-uri
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: backend
-spec:
-  selector:
-    app: backend
-  ports:
-    - protocol: TCP
-      port: 5000
-      targetPort: 5000
+
