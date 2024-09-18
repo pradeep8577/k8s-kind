@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: amcibus.app
+          image: pradeep018/amcibus.app
           ports:
             - containerPort: 80
 ---
